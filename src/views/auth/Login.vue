@@ -78,7 +78,7 @@ export default {
     const login = async () => {
       try {
         await authStore.login(user);
-        router.push({ name: "dashboard" });
+        router.push({ name: "home" });
       } catch (error) {
         validation.value = error;
         if (validation.value.email) {
@@ -95,7 +95,7 @@ export default {
 
     onMounted(() => {
       if (authStore.isLoggedIn) {
-        router.push({ name: "dashboard" });
+        router.push({ name: "home" });
       }
     });
 

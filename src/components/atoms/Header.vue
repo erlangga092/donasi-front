@@ -4,7 +4,15 @@
       <div class="container grid grid-cols-10 p-3 mx-auto sm:w-full md:w-5/12">
         <div
           class="w-10 h-10 col-span-2 p-1 mr-3 bg-white rounded-full shadow-sm"
-        ></div>
+        >
+          <router-link :to="{ name: 'home' }">
+            <img
+              src="../../assets/images/muslim.png"
+              class="inline-block"
+              alt=""
+            />
+          </router-link>
+        </div>
         <div class="col-span-8">
           <input
             type="text"

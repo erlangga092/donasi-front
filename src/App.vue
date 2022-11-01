@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-gray-300">
+  <div class="min-h-screen bg-gray-300">
     <HeaderVue />
     <router-view></router-view>
     <FooterVue />

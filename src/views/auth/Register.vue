@@ -77,7 +77,7 @@ export default {
     const register = async () => {
       try {
         await authStore.register(user);
-        router.push({ name: "dashboard" });
+        router.push({ name: "home" });
         window.alert("Login Berhasil!");
       } catch (error) {
         validation.value = error;

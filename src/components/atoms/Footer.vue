@@ -4,7 +4,8 @@
       class="container grid grid-cols-4 gap-4 p-2 mx-auto sm:w-full md:w-5/12"
     >
       <div>
-        <a
+        <router-link
+          :to="{ name: 'home' }"
           href=""
           class="justify-center inline-block w-full text-center focus:text-teal-500 hover:text-teal-500"
         >
@@ -16,7 +17,7 @@
             height="25"
           />
           <span class="block text-xs">Beranda</span>
-        </a>
+        </router-link>
       </div>
 
       <div>
@@ -36,8 +37,8 @@
       </div>
 
       <div>
-        <a
-          href=""
+        <router-link
+          :to="{ name: 'campaign' }"
           class="justify-center inline-block w-full text-center focus:text-teal-500 hover:text-teal-500"
         >
           <img
@@ -48,12 +49,12 @@
             height="25"
           />
           <span class="block text-xs">Campaign</span>
-        </a>
+        </router-link>
       </div>
 
       <div>
-        <a
-          href=""
+        <router-link
+          :to="{ name: 'dashboard' }"
           class="justify-center inline-block w-full text-center focus:text-teal-500 hover:text-teal-500"
         >
           <img
@@ -64,7 +65,7 @@
             height="25"
           />
           <span class="block text-xs">Akun</span>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>

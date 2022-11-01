@@ -21,6 +21,18 @@ const routes = [
         /* webpackChunkName: "dashboard" */ "../views/dashboard/Index.vue"
       ),
   },
+  {
+    path: "/campaign",
+    name: "campaign",
+    component: () =>
+      import(/* webpackChunkName: "dashboard" */ "../views/campaign/Index.vue"),
+  },
+  {
+    path: "/",
+    name: "home",
+    component: () =>
+      import(/* webpackChunkName: "dashboard" */ "../views/home/Index.vue"),
+  },
 ];
 
 const router = createRouter({
